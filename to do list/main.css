@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.body {
+  height: 500px;
+  border: 2px solid #f44336;
+  width: 45%;
+  margin: 5% auto;
+}
+.body .header {
+  background-color: #f44336;
+  padding: 35px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-items: center;
+}
+.body .header h1 {
+  font-size: 25px;
+  color: white;
+}
+.body .header .buttons {
+  display: flex;
+  gap: 0;
+  width: 90%;
+}
+.body .header .buttons input {
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  font-size: 16px;
+}
+.body .header .buttons button {
+  border: none;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+.body .header .buttons button:hover {
+  background-color: #bbb;
+}
+.body ul li.checked::before {
+  content: "";
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+.body ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+}
+.body ul li .deleteBtn {
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+  font-size: 18px;
+}
+.body ul li .deleteBtn:hover {
+  background-color: #f44336;
+  color: white;
+}
+.body ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+.body ul li:nth-child(odd) .deleteBtn {
+  background: #f9f9f9;
+}
+.body ul li:nth-child(odd) .deleteBtn:hover {
+  background-color: #f44336;
+  color: white;
+}
+.body ul li:hover {
+  background: #ddd;
+}
+.body ul li:hover .deleteBtn {
+  background: #ddd;
+}
+.body ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}/*# sourceMappingURL=main.css.map */
